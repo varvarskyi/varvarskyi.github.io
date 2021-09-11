@@ -1,0 +1,23 @@
+// @mixin transform($property) {
+//    -webkit-transform: $property;
+//    -ms-transform: $property;
+//    transform: $property;
+// }
+
+@mixin mediaQuery($width, $minmax) {
+   //    @if ($minmax == "min") {
+   //       @media (min-width: $width) {
+   //          max-width: $width;
+   //       }
+   //    } @else {
+   //       @media (max-width: $width) {
+   //          max-width: $width;
+   //       }
+   //    }
+
+   @media (#{$minmax}-width: $width) {
+      @content;
+   }
+}
+
+ 
